@@ -83,7 +83,7 @@ const CardComponent = () => {
             </ListItem>
           </List>
           <label htmlFor="input-field" style={{fontWeight: "700"}}>Email address:</label>
-          <TextField id="input-field" variant="outlined" type='email'  fullWidth sx={{marginTop:"10px", marginBottom:"20px"}} value={email} error={!isValid}
+          <TextField id="input-field" placeholder='email@company.com' variant="outlined" type='email'  fullWidth sx={{marginTop:"10px", marginBottom:"20px"}} value={email} error={!isValid}
             onChange={(e) => {
               setEmail(e.target.value);
               setIsValid(true);
